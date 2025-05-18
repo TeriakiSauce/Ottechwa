@@ -16,9 +16,8 @@ def overwrite_dataset(df = pd.DataFrame):
 def main():
     sorted_data = sort_dataset_abc(software_companies_dataset)
     overwrite_dataset(sorted_data)
-
     sorted_data.to_json(JSON_FILE, orient='records', indent=4)
 
-    print(f"Converted '{FILE_PATH}' to '{JSON_FILE}' using pandas.")
+    print(f"Generated new JSON file")
     
 main()
