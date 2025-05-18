@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#logo {
+    width: 35px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: #D3D3D3;
+}
+
+.company-logo {
+width: 32px;
+height: 32px;
+object-fit: contain;
+}
+
+#buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
