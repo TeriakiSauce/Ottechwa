@@ -42,6 +42,7 @@ main {
 #company-list thead {
   background-color: #023E8A;
   color: white;
+  text-align: left
 }
 
 #company-list th, #company-list td {
