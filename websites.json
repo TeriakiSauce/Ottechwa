@@ -9,7 +9,7 @@
     },
     {
         "Company Name":"Arup",
-        "Careers Website":"https:\/\/jobs.arup.com\/jobs\/search\/14406563"
+        "Careers Website":"https:\/\/jobs.arup.com\/jobs\/search\/"
     },
     {
         "Company Name":"Bank of Canada",
@@ -89,7 +89,7 @@
     },
     {
         "Company Name":"Honeywell",
-        "Careers Website":"https:\/\/careers.honeywell.com\/us\/en\/search-results?keywords=&s=1"
+        "Careers Website":"https:\/\/careers.honeywell.com\/en\/sites\/Honeywell\/jobs"
     },
     {
         "Company Name":"IBM",
@@ -206,5 +206,9 @@
     {
         "Company Name":"Veem",
         "Careers Website":"https:\/\/www.veem.com\/careers\/"
+    },
+    {
+        "Company Name":"Zhone",
+        "Careers Website":"https:\/\/recruiting.paylocity.com\/recruiting\/jobs\/All\/71dd2780-25a5-421a-9c99-959c6be49e8c\/Zhone-Technologies-Inc?location=Ottawa&department=All%20Departments"
     }
 ]
