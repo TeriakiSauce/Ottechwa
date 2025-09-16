@@ -4,25 +4,32 @@ fetch('websites.json')
     return response.json();
   })
   .then(data => {
-    const container = document.getElementById("buttons");
+    const tableBody = document.getElementById("company-rows");
 
     data.forEach(company => {
-      const button = document.createElement("button");
-      button.className = "company-button";
+      const row = document.createElement("tr");
+
+      const nameCell = document.createElement("td");
+      nameCell.textContent = company["Company Name"];
+
+      const linkCell = document.createElement("td");
+      const link = document.createElement("a");
+      link.href = company["Careers Website"];
+      link.target = "_blank";
 
       const img = document.createElement("img");
       img.src = `Company Logos/${company["Company Name"]}.png`;
       img.alt = company["Company Name"];
       img.className = "company-logo";
+      img.onerror = () => { img.style.display = "none"; };
 
-      const span = document.createElement("span");
-      span.innerText = company["Company Name"];
+      link.appendChild(img);
+      linkCell.appendChild(link);
 
-      button.appendChild(img);
-      button.appendChild(span);
-      button.onclick = () => window.open(company["Careers Website"], '_blank');
+      row.appendChild(nameCell);
+      row.appendChild(linkCell);
 
-      container.appendChild(button);
+      tableBody.appendChild(row);
     });
   })
   .catch(error => {
